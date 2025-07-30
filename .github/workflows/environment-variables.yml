@@ -2,6 +2,9 @@ name: Environment Variables
 
 env:
   GLOBAL_MESSAGE: "🚀 The Environment Variable Explorer!"
+  JOB_MESSAGE: "This value will be overridden by the job"
+  PLATFORM:  "This value will be overridden by the job"
+  STEP_MESSAGE: "This value will be overridden by the step"
   MODE: "development"
 
 on: [push]
