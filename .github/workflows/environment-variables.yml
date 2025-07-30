@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GLOBAL_MESSAGE: "🚀 Ubuntu Job Override"
-      JOB_MESSAGE: "📦 Job-level variable for Ubuntu"
+      GLOBAL_MESSAGE: "Ubuntu Job Override"
+      JOB_MESSAGE: "Job-level variable for Ubuntu"
       PLATFORM: "ubuntu-latest"
 
     steps:
@@ -33,8 +33,8 @@ jobs:
 
       - name: 🔧 Step Level Environment with YAML Interpolation
         env:
-          GLOBAL_MESSAGE: "🚀 Step Override: ${{ env.MODE }} mode"
-          STEP_MESSAGE: "🔧 From step in ${{ env.PLATFORM }}"
+          GLOBAL_MESSAGE: "Step Override: ${{ env.MODE }} mode"
+          STEP_MESSAGE: "From step in ${{ env.PLATFORM }}"
         run: |
           echo "🌍 GLOBAL_MESSAGE (YAML interpolated) : ${{ env.GLOBAL_MESSAGE }}"
           echo "🔧 STEP_MESSAGE (YAML interpolated)   : ${{ env.STEP_MESSAGE }}"
@@ -45,8 +45,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      GLOBAL_MESSAGE: "🚀 Windows Job Override"
-      JOB_MESSAGE: "📦 Job-level variable for Windows"
+      GLOBAL_MESSAGE: "Windows Job Override"
+      JOB_MESSAGE: "Job-level variable for Windows"
       PLATFORM: "windows-latest"
 
     steps:
@@ -66,8 +66,8 @@ jobs:
 
       - name: 🔧 Step Level Environment with YAML Interpolation
         env:
-          GLOBAL_MESSAGE: "🚀 Step Override: ${{ env.MODE }} mode"
-          STEP_MESSAGE: "🔧 From step in ${{ env.PLATFORM }}"
+          GLOBAL_MESSAGE: "Step Override: ${{ env.MODE }} mode"
+          STEP_MESSAGE: "From step in ${{ env.PLATFORM }}"
         run: |
           Write-Output "🌍 GLOBAL_MESSAGE (YAML interpolated) : ${{ env.GLOBAL_MESSAGE }}"
           Write-Output "🔧 STEP_MESSAGE (YAML interpolated)   : ${{ env.STEP_MESSAGE }}"
